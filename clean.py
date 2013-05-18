@@ -13,5 +13,5 @@
 import re
 a= open('shakespeare.txt','r').read()
 b = open('shakespeare_clean.txt','w')
-c=re.sub('[IVXLCDM]{1,10}','',a)
+c=re.sub('[IVXLCDM]{1,10}[\n]','',a)
 b.write(c)
